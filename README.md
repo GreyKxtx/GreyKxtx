@@ -16,3 +16,12 @@
 
 ### 🔒 Security Tools
 <img src="https://img.shields.io/badge/Burp Suite-000000?style=for-the-badge&logo=burpsuite&logoColor=F0FFFF" width="225">  <img src="https://img.shields.io/badge/Nmap-000000?style=for-the-badge&logo=iconfinder&logoColor=F0FFFF" width="150">
+
+
+## Связаться со мной
+
+<a href="https://t.me/Saiyxjin_God">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" width="30" height="30" />
+</a>
+
+
