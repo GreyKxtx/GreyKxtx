@@ -3,7 +3,7 @@
 
 
 ### 🌐 Frontend
-<img src="https://img.shields.io/badge/HTML-000000?style=for-the-badge&logo=HTML5&logoColor=F0FFFF" width="150">  <img src="https://img.shields.io/badge/CSS-000000?style=for-the-badge&logo=css3&logoColor=F0FFFF" width="130">  <img src="https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=JavaScript&logoColor=F0FFFF" width="250">
+<img src="https://img.shields.io/badge/HTML-000000?style=for-the-badge&logo=HTML5&logoColor=F0FFFF" width="100">  <img src="https://img.shields.io/badge/CSS-000000?style=for-the-badge&logo=css3&logoColor=F0FFFF" width="130">  <img src="https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=JavaScript&logoColor=F0FFFF" width="250">
 
 ### 🖥️ Backend
  <img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=Python&logoColor=F0FFFF" width="170">  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=mongodb&logoColor=F0FFFF" width="150">
