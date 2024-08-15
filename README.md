@@ -1,28 +1,18 @@
 ## My Tech Stack
 
+
+
 ### 🌐 Frontend
-- **HTML/CSS:** Markup and styling of web pages.
-- **JavaScript:** Core language for interactivity on the frontend.
-- **React:** Library for building user interfaces.
-- **TypeScript:** A strongly typed programming language that builds on JavaScript.
+<img src="https://img.shields.io/badge/HTML-000000?style=for-the-badge&logo=HTML5&logoColor=F0FFFF" width="150">  <img src="https://img.shields.io/badge/CSS-000000?style=for-the-badge&logo=css3&logoColor=F0FFFF" width="130">  <img src="https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=JavaScript&logoColor=F0FFFF" width="250">
 
- <img src="https://img.shields.io/badge/Backend-000000?style=for-the-badge&logo=stackedit&logoColor=F0FFFF"/>
-
-<img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=Python&logoColor=F0FFFF"/>
-<img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=Flask&logoColor=F0FFFF"/>
-
-
+### 🖥️ Backend
+ <img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=Python&logoColor=F0FFFF" width="170">  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=mongodb&logoColor=F0FFFF" width="150">
 
 ### 💾 Databases
-- **MySQL:** Relational database management system.
-- **PostgreSQL:** Advanced, open-source relational database.
-- **MongoDB:** NoSQL database for unstructured data.
+<img src="https://img.shields.io/badge/MongoDB-000000?style=for-the-badge&logo=Python&logoColor=F0FFFF" width="180">  <img src="https://img.shields.io/badge/SQLite-000000?style=for-the-badge&logo=sqlite&logoColor=F0FFFF" width="150">
 
 ### 🛠️ Utilities
-- **Docker:** Containerization platform for deploying applications.
-- **Kubernetes:** System for automating deployment, scaling, and management of containerized applications.
-- **Git:** Version control system for tracking changes in code.
-- **Jenkins:** Automation server for CI/CD.
+<img src="https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=Docker&logoColor=F0FFFF" width="150">  <img src="https://img.shields.io/badge/postman-000000?style=for-the-badge&logo=postman&logoColor=F0FFFF" width="165">
 
-
-
+### 🔒 Security Tools
+<img src="https://img.shields.io/badge/Burp Suite-000000?style=for-the-badge&logo=burpsuite&logoColor=F0FFFF" width="225">  <img src="https://img.shields.io/badge/Nmap-000000?style=for-the-badge&logo=iconfinder&logoColor=F0FFFF" width="150">
