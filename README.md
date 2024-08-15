@@ -6,7 +6,7 @@
 - **React:** Library for building user interfaces.
 - **TypeScript:** A strongly typed programming language that builds on JavaScript.
 
-### 🖥️ Backend
+ <img src="https://img.shields.io/badge/Backend-000000?style=for-the-badge&logo=stackedit&logoColor=F0FFFF"/>
 
 <img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=Python&logoColor=F0FFFF"/>
 <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=Flask&logoColor=F0FFFF"/>
