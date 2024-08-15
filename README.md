@@ -7,10 +7,11 @@
 - **TypeScript:** A strongly typed programming language that builds on JavaScript.
 
 ### 🖥️ Backend
-- **Node.js:** JavaScript runtime for server-side development.
-- **Express:** Web framework for Node.js.
-- **Python:** Versatile programming language for backend development.
-- **Django:** High-level Python web framework.
+
+<img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=Python&logoColor=F0FFFF"/>
+<img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=Flask&logoColor=F0FFFF"/>
+
+
 
 ### 💾 Databases
 - **MySQL:** Relational database management system.
@@ -24,4 +25,4 @@
 - **Jenkins:** Automation server for CI/CD.
 
 
-<img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=Python&logoColor=F0FFFF"/>
+
