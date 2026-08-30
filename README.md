@@ -12,7 +12,7 @@ from API design and distributed backends to production-ready frontends.
 
 ---
 
-## <img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/icons/stack.svg" height="22" alt=""/> Tech Stack
+## <img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/stack.svg?v=3" height="18" alt=""/> Tech Stack
 
 **Languages**
 
@@ -59,7 +59,7 @@ from API design and distributed backends to production-ready frontends.
 
 ---
 
-## <img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/icons/activity.svg" height="22" alt=""/> Activity
+## <img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/activity.svg?v=3" height="18" alt=""/> Activity
 
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=GreyKxtx&hide_border=true&background=00000000&ring=8B5CF6&fire=2DD4BF&currStreakLabel=8B5CF6&currStreakNum=C9D1D9&sideNums=C9D1D9&sideLabels=8B949E&dates=8B949E&stroke=30363D" height="170" alt="Streak stats" />
@@ -71,7 +71,7 @@ from API design and distributed backends to production-ready frontends.
 
 ---
 
-## <img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/icons/snake.svg" height="22" alt=""/> Contribution Snake
+## <img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/snake.svg?v=3" height="18" alt=""/> Contribution Snake
 
 <div align="center">
   <picture>
@@ -82,7 +82,7 @@ from API design and distributed backends to production-ready frontends.
 
 ---
 
-## <img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/icons/connect.svg" height="22" alt=""/> Connect
+## <img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/connect.svg?v=3" height="18" alt=""/> Connect
 
 <div align="center">
   <a href="https://t.me/greykxtx"><img src="https://img.shields.io/badge/Telegram-181A1B?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"/></a>
