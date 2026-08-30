@@ -1,0 +1,36 @@
+<svg width="700" height="90" viewBox="0 0 700 90" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#2DD4BF"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .line {
+      font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace;
+      font-size: 30px;
+      font-weight: 600;
+      fill: url(#grad);
+      opacity: 0;
+      animation: cycle 9s infinite;
+    }
+    .l2 { animation-delay: 3s; }
+    .l3 { animation-delay: 6s; }
+    @keyframes cycle {
+      0%   { opacity: 0; }
+      4%   { opacity: 1; }
+      30%  { opacity: 1; }
+      34%  { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .cursor {
+      fill: #8B5CF6;
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+  <text class="line l1" x="350" y="55" text-anchor="middle">Full-stack Developer</text>
+  <text class="line l2" x="350" y="55" text-anchor="middle">AI Engineer</text>
+  <text class="line l3" x="350" y="55" text-anchor="middle">Python • TypeScript • React</text>
+  <rect class="cursor" x="672" y="30" width="4" height="34"/>
+</svg>
