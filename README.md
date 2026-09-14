@@ -134,9 +134,9 @@ Learning platform built around a course-constructor: courses are structured obje
 <br/><br/>
 
 <a href="https://acro-company-site.vercel.app/"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-acro.svg" height="46" alt="Acro"/></a>
-<a href="https://linkedin.com/in/greykxtx"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-linkedin.svg" height="46" alt="LinkedIn"/></a>
+<a href="https://www.linkedin.com/in/andrey-korsun/"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-linkedin.svg" height="46" alt="LinkedIn"/></a>
 <a href="mailto:greykxtx@example.com"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-email.svg" height="46" alt="Email"/></a>
-<a href="https://t.me/greykxtx"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-telegram.svg" height="46" alt="Telegram"/></a>
+<a href="https://t.me/Scrimgxneee"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-telegram.svg" height="46" alt="Telegram"/></a>
 
 <br/>
 
