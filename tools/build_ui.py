@@ -158,13 +158,15 @@ PROJECTS = [
      "built from the prompt itself rather than fitted into a preset."),
 
     ("Orchestra Augur", "information aggregation & signal detection", "in development", ACCENT2, [
-        ("Stack", "Python - React - shadcn/ui - clustering & scoring"),
-        ("Pipeline", "Source collection > dedup > story clustering > importance scoring"),
-        ("Planned", "Market analysis / forecasting module - world map of events"),
+        ("API", "Go 1.26 - chi - pgx - goose - gofeed"),
+        ("Console", "Next.js 16 - React 19 - TypeScript - Tailwind 4 - shadcn/ui - Recharts"),
+        ("Data", "PostgreSQL + pgvector - RSSHub"),
+        ("Markup", "LM Studio - nomic embeddings, Qwen3 for clustering and headlines"),
         ("Repository", "github.com/GreyKxtx/Orchestra-Augur")],
-     "Collects sources at scale, deduplicates them, clusters related reports into single story "
-     "events and scores how much each one actually matters - so the output is a ranked picture "
-     "of what happened, not a feed."),
+     "A source is added by link - site, feed, Telegram, YouTube, GitHub, Reddit, arXiv - and the "
+     "service works out the feed itself. A catalogue of 806 verified sources feeds a pipeline that "
+     "embeds publications, folds related ones into single story events and scores how much each "
+     "matters, so the output is a ranked picture of what happened, not a feed."),
 
     ("Mentorium", "education platform with a realtime AI tutor", "near complete", ACCENT2, [
         ("Backend", "FastAPI (async) - SQLAlchemy - Celery - PostgreSQL - Redis - MinIO"),
@@ -202,7 +204,7 @@ STACK = [("BACKEND",    ["FastAPI", "Django", "Flask", "AIOHTTP", "Spring Boot",
          ("AI TOOLING", ["PyTorch", "TensorFlow", "LangGraph", "vLLM", "LM Studio", "OpenCV",
                          "HuggingFace", "scikit-learn", "faster-whisper", "Piper"]),
          ("DATA",       ["PostgreSQL", "Redis", "MongoDB", "MySQL", "SQLite", "Elasticsearch",
-                         "SQLAlchemy", "Alembic"]),
+                         "pgvector", "SQLAlchemy", "Alembic"]),
          ("INFRA",      ["Docker", "Kubernetes", "Nginx", "Linux", "CI/CD", "GitHub Actions",
                          "RabbitMQ", "Celery", "MinIO", "Prometheus", "Grafana", "Gradle"])]
 
