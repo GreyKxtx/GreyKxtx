@@ -2,26 +2,7 @@
 
 <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=28&duration=2600&pause=900&color=8B5CF6&center=true&vCenter=true&width=900&lines=Full-stack+Developer+%7C+AI+Engineer;Building+the+Acro+ecosystem;Orchestra+Code+%E2%80%94+AI+coding+agent;Orchestra+Studio+%E2%80%94+content+pipeline;Orchestra+Augur+%E2%80%94+information+aggregation;Acro+EdTech+%E2%80%94+courses+%2B+AI+tutor" alt="Typing SVG" />
 
-<br/>
-
-<img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/terminal.svg" width="100%" alt="GreyKxtx — system info" />
-
-<br/><br/>
-
-<a href="https://your-portfolio.dev"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-portfolio.svg" height="42" alt="Portfolio"/></a>
-<a href="https://linkedin.com/in/greykxtx"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-linkedin.svg" height="42" alt="LinkedIn"/></a>
-<a href="mailto:greykxtx@example.com"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-email.svg" height="42" alt="Email"/></a>
-<a href="https://t.me/greykxtx"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-telegram.svg" height="42" alt="Telegram"/></a>
-
-<br/>
-
-<img src="https://komarev.com/ghpvc/?username=GreyKxtx&color=8B5CF6&style=for-the-badge&label=VIEWS&labelColor=070709" alt="Profile views"/>
-<img src="https://img.shields.io/github/followers/GreyKxtx?style=for-the-badge&color=8B5CF6&labelColor=070709&label=FOLLOWERS" alt="Followers"/>
-<img src="https://img.shields.io/github/stars/GreyKxtx?style=for-the-badge&color=8B5CF6&labelColor=070709&label=STARS" alt="Stars"/>
-
-<br/><br/>
-
-<img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/about.svg" width="100%" alt="About"/>
+<img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/hero.svg" width="100%" alt="GreyKxtx — system info & about" />
 
 </div>
 
@@ -29,7 +10,7 @@
 
 ## Acro Ecosystem
 
-> An umbrella of platforms for business needs — built as independent systems that share infrastructure.
+<img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/ecosystem.svg" width="100%" alt="Acro Ecosystem" />
 
 <details open>
 <summary><b>&nbsp;🎼&nbsp; Orchestra Code</b> &nbsp;·&nbsp; <i>local-first AI coding agent</i></summary>
@@ -109,25 +90,15 @@ Learning platform built around a course-constructor: courses are structured obje
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/stack.svg" width="100%" alt="Tech stack"/>
+<img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/stack.svg" width="100%" alt="Tech stack & AI directions" />
 
 <br/><br/>
 
-<img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/ai.svg" width="100%" alt="AI directions"/>
+<img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/focus.svg" width="100%" alt="Current focus" />
 
 <br/><br/>
 
-<a href="https://www.codewars.com/users/Screamyy"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-codewars.svg" height="42" alt="Codewars"/></a>
-<a href="https://tryhackme.com/p/[your-username]"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-tryhackme.svg" height="42" alt="TryHackMe"/></a>
-<a href="https://github.com/GreyKxtx"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-github.svg" height="42" alt="GitHub"/></a>
-
-<br/><br/>
-
-<img src="https://www.codewars.com/users/Screamyy/badges/large" alt="Codewars"/>
-
-<br/><br/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=GreyKxtx&hide_border=true&background=00000000&ring=8B5CF6&fire=A78BFA&currStreakLabel=8B5CF6&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=8A8699&dates=8A8699&stroke=231C3D" height="170" alt="Streak stats"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=GreyKxtx&hide_border=true&background=00000000&ring=8B5CF6&fire=A78BFA&currStreakLabel=8B5CF6&currStreakNum=EDEAF7&sideNums=EDEAF7&sideLabels=9E99B5&dates=9E99B5&stroke=2E2846" height="170" alt="Streak stats"/>
 
 <br/>
 
@@ -150,7 +121,7 @@ Learning platform built around a course-constructor: courses are structured obje
 
 <br/><br/>
 
-<!-- Заработает после настройки workflow invaders.yml -->
+<!-- Заработает после первого прогона workflow .github/workflows/invaders.yml -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/output/commit-invaders-dark.svg">
   <img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/output/commit-invaders.svg" alt="Commit Invaders"/>
@@ -158,14 +129,25 @@ Learning platform built around a course-constructor: courses are structured obje
 
 <br/><br/>
 
-<img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/focus.svg" width="100%" alt="Current focus"/>
+<img src="https://www.codewars.com/users/Screamyy/badges/large" alt="Codewars"/>
 
 <br/><br/>
 
-<a href="mailto:greykxtx@example.com"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-email.svg" height="42" alt="Email"/></a>
-<a href="https://t.me/greykxtx"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-telegram.svg" height="42" alt="Telegram"/></a>
-<a href="https://linkedin.com/in/greykxtx"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-linkedin.svg" height="42" alt="LinkedIn"/></a>
-<a href="https://your-portfolio.dev"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-portfolio.svg" height="42" alt="Portfolio"/></a>
+<a href="https://your-portfolio.dev"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-portfolio.svg" height="46" alt="Portfolio"/></a>
+<a href="https://linkedin.com/in/greykxtx"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-linkedin.svg" height="46" alt="LinkedIn"/></a>
+<a href="mailto:greykxtx@example.com"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-email.svg" height="46" alt="Email"/></a>
+<a href="https://t.me/greykxtx"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-telegram.svg" height="46" alt="Telegram"/></a>
+
+<br/>
+
+<a href="https://github.com/GreyKxtx"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-github.svg" height="46" alt="GitHub"/></a>
+<a href="https://www.codewars.com/users/Screamyy"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-codewars.svg" height="46" alt="Codewars"/></a>
+<a href="https://tryhackme.com/p/[your-username]"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-tryhackme.svg" height="46" alt="TryHackMe"/></a>
+
+<br/><br/>
+
+<img src="https://komarev.com/ghpvc/?username=GreyKxtx&color=8B5CF6&style=for-the-badge&label=VIEWS&labelColor=12121B" alt="Profile views"/>
+<img src="https://img.shields.io/github/followers/GreyKxtx?style=for-the-badge&color=8B5CF6&labelColor=12121B&label=FOLLOWERS" alt="Followers"/>
 
 <br/><br/>
 
