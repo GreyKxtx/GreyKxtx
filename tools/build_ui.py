@@ -188,6 +188,14 @@ PROJECTS = [
      "broadcast channels, WebRTC audio/video calls with screen share, and end-to-end encrypted "
      "direct messages. Web and Electron desktop ship from one React monorepo."),
 
+    ("Antidetect", "anti-detect browser with local-only profiles", "in development", ACCENT2, [
+        ("Storage", "Profiles and configs live on your machine, not on a vendor server"),
+        ("Security", "Nothing about an identity is uploaded or synced anywhere"),
+        ("Automation", "Built-in scripting drives repetitive events instead of hand-clicking")],
+     "An anti-detect browser built the other way round from the hosted ones: the profiles and "
+     "their configuration stay local, so the data that identifies a session never leaves the "
+     "machine it runs on. Routine work is handed to a script rather than repeated by hand."),
+
     ("Acro ERP", "business operations suite", "parked - resumes after Studio", MUTED, [
         ("Role", "One system over every module connected to the business"),
         ("Does", "Run and analyse all directions, their statistics and the problems in them"),
@@ -354,19 +362,24 @@ def build():
 # buttons + footer banner
 # =========================================================================
 def build_buttons():
+    labels = ["ACRO", "LINKEDIN", "EMAIL", "TELEGRAM", "CODEWARS", "TRYHACKME", "GITHUB",
+              "MENTORIUM", "LUNACY", "AUGUR"]
+    # One width for every button: ragged rows were the reason the footer looked scattered.
+    BTN_W = int(round(max(w(l, 13.5, 1.2) for l in labels))) + 66
     for slug, label in [("acro", "ACRO"), ("linkedin", "LINKEDIN"), ("email", "EMAIL"),
                         ("telegram", "TELEGRAM"), ("codewars", "CODEWARS"),
                         ("tryhackme", "TRYHACKME"), ("github", "GITHUB"),
                         ("mentorium", "MENTORIUM"), ("lunacy", "LUNACY"), ("augur", "AUGUR")]:
         fs, ls = 13.5, 1.2
         tw = w(label, fs, ls)
-        bw, h = int(round(22 + 12 + tw + 12 + 20)), 46
+        bw, h = BTN_W, 46
         svg = (HEAD.format(w=bw, h=h, f=FONT)
                + '<style>.g{animation:g 3s ease-in-out infinite}@keyframes g{0%,100%{opacity:.55}50%{opacity:1}}</style>'
                + f'<rect x="1" y="1" width="{bw-2}" height="{h-2}" rx="8" fill="{BG}" stroke="{BORDER}"/>'
                + f'<rect class="g" x="1" y="1" width="3" height="{h-2}" rx="1.5" fill="{ACCENT}"/>'
-               + txt(20, 29.5, "[", fs, ACCENT) + txt(32, 29.5, label, fs, TEXT, ls=ls)
-               + txt(32 + tw + 2, 29.5, "]", fs, ACCENT) + "</svg>\n")
+               + txt(bw/2 - tw/2 - 12, 29.5, "[", fs, ACCENT)
+               + txt(bw/2 - tw/2, 29.5, label, fs, TEXT, ls=ls)
+               + txt(bw/2 + tw/2 + 2, 29.5, "]", fs, ACCENT) + "</svg>\n")
         open(os.path.join(OUT, f"btn-{slug}.svg"), "w").write(svg)
         print(f"  btn-{slug}.svg {bw}x{h}")
 
