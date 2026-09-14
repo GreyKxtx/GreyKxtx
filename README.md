@@ -1,17 +1,17 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=28&duration=2600&pause=900&color=8B5CF6&center=true&vCenter=true&width=900&lines=Full-stack+Developer+%7C+AI+Engineer;Building+the+Acro+ecosystem;Orchestra+Code+%E2%80%94+AI+coding+agent;Orchestra+Studio+%E2%80%94+content+pipeline;Orchestra+Augur+%E2%80%94+information+aggregation;Mentorium+%E2%80%94+courses+%2B+AI+tutor;Lunacy+%E2%80%94+team+messenger" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=28&duration=2600&pause=900&color=8B5CF6&center=true&vCenter=true&width=900&lines=Full-stack+Developer+%7C+AI+Engineer;Building+the+Acro+ecosystem;Orchestra+Code+%E2%80%94+AI+coding+agent;Orchestra+Studio+%E2%80%94+video+from+prompts;Orchestra+Augur+%E2%80%94+information+aggregation;Mentorium+%E2%80%94+courses+%2B+AI+tutor;Lunacy+%E2%80%94+team+messenger" alt="Typing SVG" />
 
 <picture>
-  <source media="(max-width: 700px)" srcset="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/profile-mobile.svg">
-  <img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/profile.svg" width="100%" alt="GreyKxtx — system info, about, the Acro ecosystem, tech stack and AI directions" />
+  <source media="(max-width: 700px)" srcset="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/profile-mobile.svg?v=2">
+  <img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/profile.svg?v=2" width="100%" alt="GreyKxtx — system info, about, the Acro ecosystem, tech stack and AI directions" />
 </picture>
 
 <br/>
 
-<a href="https://github.com/GreyKxtx/Mentorium"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-mentorium.svg" height="46" alt="Mentorium"/></a>
-<a href="https://github.com/GreyKxtx/Lunacy"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-lunacy.svg" height="46" alt="Lunacy"/></a>
-<a href="https://github.com/GreyKxtx/Orchestra-Augur"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-augur.svg" height="46" alt="Orchestra Augur"/></a>
+<a href="https://github.com/GreyKxtx/Mentorium"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-mentorium.svg?v=2" height="46" alt="Mentorium"/></a>
+<a href="https://github.com/GreyKxtx/Lunacy"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-lunacy.svg?v=2" height="46" alt="Lunacy"/></a>
+<a href="https://github.com/GreyKxtx/Orchestra-Augur"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-augur.svg?v=2" height="46" alt="Orchestra Augur"/></a>
 
 <br/><br/>
 
@@ -35,16 +35,16 @@
 
 <br/><br/>
 
-<a href="https://acro-company-site.vercel.app/"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-acro.svg" height="46" alt="Acro"/></a>
-<a href="https://www.linkedin.com/in/andrey-korsun/"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-linkedin.svg" height="46" alt="LinkedIn"/></a>
-<a href="mailto:greykxtx@example.com"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-email.svg" height="46" alt="Email"/></a>
-<a href="https://t.me/Scrimgxneee"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-telegram.svg" height="46" alt="Telegram"/></a>
+<a href="https://acro-company-site.vercel.app/"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-acro.svg?v=2" height="46" alt="Acro"/></a>
+<a href="https://www.linkedin.com/in/andrey-korsun/"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-linkedin.svg?v=2" height="46" alt="LinkedIn"/></a>
+<a href="mailto:greykxtx@example.com"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-email.svg?v=2" height="46" alt="Email"/></a>
+<a href="https://t.me/Scrimgxneee"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-telegram.svg?v=2" height="46" alt="Telegram"/></a>
 
 <br/>
 
-<a href="https://github.com/GreyKxtx"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-github.svg" height="46" alt="GitHub"/></a>
-<a href="https://www.codewars.com/users/Screamyy"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-codewars.svg" height="46" alt="Codewars"/></a>
-<a href="https://tryhackme.com/p/eyesecluded44"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-tryhackme.svg" height="46" alt="TryHackMe"/></a>
+<a href="https://github.com/GreyKxtx"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-github.svg?v=2" height="46" alt="GitHub"/></a>
+<a href="https://www.codewars.com/users/Screamyy"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-codewars.svg?v=2" height="46" alt="Codewars"/></a>
+<a href="https://tryhackme.com/p/eyesecluded44"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-tryhackme.svg?v=2" height="46" alt="TryHackMe"/></a>
 
 <br/><br/>
 
@@ -53,7 +53,7 @@
 
 <br/><br/>
 
-<img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/banner-footer.svg" width="100%" alt=""/>
+<img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/banner-footer.svg?v=2" width="100%" alt=""/>
 
 </div>
 
@@ -63,4 +63,8 @@
   зазоры между блоками, потому что GitHub вставляет картинки как inline-элементы
   и вырезает любые style. Правь содержимое в tools/build_ui.py и запускай:
       python3 tools/build_ui.py
+
+  После каждой пересборки поднимай ?v=N в ссылках ниже. GitHub проксирует
+  картинки через camo и кеширует их по URL — без нового ?v= на профиле
+  ещё долго будет висеть старая версия.
 -->

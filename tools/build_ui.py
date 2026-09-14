@@ -149,11 +149,13 @@ PROJECTS = [
      "A planner decomposes tasks, workers execute them, and a code knowledge graph gives the "
      "model structural context instead of raw file dumps."),
 
-    ("Orchestra Studio", "content generation pipeline", "in development - ships first", ACCENT2, [
-        ("Stack", "Python - LLM / VLM pipelines - [add specifics]"),
-        ("Focus", "End-to-end content production as an automated pipeline")],
-     "[2-3 sentences: what it generates, how the pipeline is structured, what makes it "
-     "different from a prompt wrapper.]"),
+    ("Orchestra Studio", "prompt-driven video generation pipeline", "in development - ships first", ACCENT2, [
+        ("Stack", "Python - LLM / VLM pipelines"),
+        ("Input", "A prompt - no templates, no preset scenes to fill in"),
+        ("Output", "Finished video, planned, generated and assembled end to end")],
+     "A prompt goes in and a finished video comes out. The pipeline plans the piece, generates "
+     "its parts and assembles them - nothing is stamped out of a template, so every video is "
+     "built from the prompt itself rather than fitted into a preset."),
 
     ("Orchestra Augur", "information aggregation & signal detection", "in development", ACCENT2, [
         ("Stack", "Python - React - shadcn/ui - clustering & scoring"),
@@ -185,9 +187,12 @@ PROJECTS = [
      "direct messages. Web and Electron desktop ship from one React monorepo."),
 
     ("Acro ERP", "business operations suite", "parked - resumes after Studio", MUTED, [
-        ("Stack", "[add stack]"),
+        ("Role", "One system over every module connected to the business"),
+        ("Does", "Run and analyse all directions, their statistics and the problems in them"),
         ("Approach", "A modern alternative to legacy suites, with AI built in, not bolted on")],
-     "[Short description of the ERP's scope and which modules exist.]"),
+     "A single place to run the whole business: connected modules report into it, so every "
+     "direction, its statistics and the problems surfacing in it are managed and analysed "
+     "together instead of module by module."),
 ]
 
 STACK = [("BACKEND",    ["FastAPI", "Django", "Flask", "AIOHTTP", "Spring Boot", "Spring Cloud",
