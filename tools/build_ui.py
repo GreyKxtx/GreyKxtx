@@ -190,12 +190,16 @@ PROJECTS = [
      "[Short description of the ERP's scope and which modules exist.]"),
 ]
 
-STACK = [("BACKEND",    ["Django", "FastAPI", "Flask", "AIOHTTP", "REST", "WebSockets", "gRPC"]),
-         ("FRONTEND",   ["React", "Next.js", "Tailwind", "shadcn/ui", "SASS", "Vite"]),
+STACK = [("BACKEND",    ["FastAPI", "Django", "Flask", "AIOHTTP", "Spring Boot", "Spring Cloud",
+                         "REST", "WebSockets", "gRPC"]),
+         ("FRONTEND",   ["React", "Next.js", "Vite", "Zustand", "Tailwind", "shadcn/ui", "SASS",
+                         "Electron"]),
          ("AI TOOLING", ["PyTorch", "TensorFlow", "LangGraph", "vLLM", "LM Studio", "OpenCV",
-                         "HuggingFace", "scikit-learn"]),
-         ("DATA",       ["PostgreSQL", "Redis", "MongoDB", "MySQL", "SQLite"]),
-         ("INFRA",      ["Docker", "Kubernetes", "Nginx", "Linux", "CI/CD", "GitHub Actions"])]
+                         "HuggingFace", "scikit-learn", "faster-whisper", "Piper"]),
+         ("DATA",       ["PostgreSQL", "Redis", "MongoDB", "MySQL", "SQLite", "Elasticsearch",
+                         "SQLAlchemy", "Alembic"]),
+         ("INFRA",      ["Docker", "Kubernetes", "Nginx", "Linux", "CI/CD", "GitHub Actions",
+                         "RabbitMQ", "Celery", "MinIO", "Prometheus", "Grafana", "Gradle"])]
 
 AI = [("LLM", "local inference, quantization, fine-tuning, function calling"),
       ("Agents / Orchestration", "LangGraph, planner-worker loops, tool use, multi-agent"),
