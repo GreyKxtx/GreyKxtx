@@ -383,35 +383,54 @@ def build_buttons():
         open(os.path.join(OUT, f"btn-{slug}.svg"), "w").write(svg)
         print(f"  btn-{slug}.svg {bw}x{h}")
 
-def build_footer():
+def build_footer(name="banner-footer.svg", cw=1020, h=130, fs=15, rx=14, amps=(14, 10)):
     """Closing bar on the panel surface: two waves drift behind a terminal prompt.
 
-    Each wave path is twice the canvas wide with a period that divides the canvas,
+    Each wave path is twice the canvas wide and its period divides the canvas,
     so translating by exactly one canvas width loops without a visible seam.
+    Rendered at two widths - the wide canvas shrinks to a ~46px sliver on a
+    phone, so the README swaps in the narrow one below 700px.
     """
-    svg = (HEAD.format(w=1020, h=130, f=FONT) + f"""<defs>
+    import math
+
+    def wave(amp, periods, y0):
+        period = cw / periods
+        step = max(6, cw // 51)
+        pts = [f"{x},{y0 + amp * math.sin(2 * math.pi * x / period):.1f}"
+               for x in range(0, 2 * cw + step, step)]
+        return "M" + " L".join(pts) + f" L{2*cw},{h + 40} L0,{h + 40} Z"
+
+    rr = (f"M0 {rx} A{rx} {rx} 0 0 1 {rx} 0 L{cw-rx} 0 A{rx} {rx} 0 0 1 {cw} {rx} "
+          f"L{cw} {h-rx} A{rx} {rx} 0 0 1 {cw-rx} {h} L{rx} {h} A{rx} {rx} 0 0 1 0 {h-rx} Z")
+    prompt = "greykxtx@acro ~ % exit"
+    curx = cw / 2 + w(prompt, fs) / 2 + 7
+    ty = h * 0.37 + fs / 2
+
+    svg = HEAD.format(w=cw, h=h, f=FONT) + f'''<defs>
 <linearGradient id="fw" x1="0%" y1="0%" x2="100%" y2="0%">
 <stop offset="0%" stop-color="{ACCENT}"/><stop offset="55%" stop-color="#6D3BF5"/><stop offset="100%" stop-color="{TEAL}"/></linearGradient>
 <linearGradient id="fr" x1="0%" y1="0%" x2="100%" y2="0%">
 <stop offset="0%" stop-color="{ACCENT}" stop-opacity="0"/><stop offset="50%" stop-color="{ACCENT}"/><stop offset="100%" stop-color="{TEAL}" stop-opacity="0"/></linearGradient>
-<clipPath id="fc"><path d="M0 14 A14 14 0 0 1 14 0 L1006 0 A14 14 0 0 1 1020 14 L1020 116 A14 14 0 0 1 1006 130 L14 130 A14 14 0 0 1 0 116 Z"/></clipPath></defs>
+<clipPath id="fc"><path d="{rr}"/></clipPath></defs>
 <style>
-.dr{{animation:dr 18s linear infinite}}@keyframes dr{{to{{transform:translateX(-1020px)}}}}
+.dr{{animation:dr 18s linear infinite}}@keyframes dr{{to{{transform:translateX(-{cw}px)}}}}
 .dr2{{animation:dr 27s linear infinite reverse}}
 .cur{{animation:bl 1.05s step-end infinite}}@keyframes bl{{50%{{opacity:0}}}}
 @media (prefers-reduced-motion:reduce){{.dr,.dr2,.cur{{animation:none}}}}
 </style>
-<path d="M0 14 A14 14 0 0 1 14 0 L1006 0 A14 14 0 0 1 1020 14 L1020 116 A14 14 0 0 1 1006 130 L14 130 A14 14 0 0 1 0 116 Z" fill="{BG}"/>
+<path d="{rr}" fill="{BG}"/>
 <g clip-path="url(#fc)">
-<path class="dr2" d="M0,98.6 L20,97.1 L40,95.2 L60,93.0 L80,90.6 L100,88.1 L120,85.8 L140,83.7 L160,82.0 L180,80.8 L200,80.1 L220,80.0 L240,80.6 L260,81.7 L280,83.3 L300,85.3 L320,87.6 L340,90.1 L360,92.5 L380,94.8 L400,96.8 L420,98.4 L440,99.5 L460,100.0 L480,99.9 L500,99.2 L520,97.9 L540,96.2 L560,94.1 L580,91.8 L600,89.3 L620,86.9 L640,84.7 L660,82.8 L680,81.3 L700,80.4 L720,80.0 L740,80.2 L760,81.1 L780,82.4 L800,84.3 L820,86.4 L840,88.8 L860,91.3 L880,93.7 L900,95.8 L920,97.6 L940,99.0 L960,99.8 L980,100.0 L1000,99.6 L1020,98.6 L1040,97.1 L1060,95.2 L1080,93.0 L1100,90.6 L1120,88.1 L1140,85.8 L1160,83.7 L1180,82.0 L1200,80.8 L1220,80.1 L1240,80.0 L1260,80.6 L1280,81.7 L1300,83.3 L1320,85.3 L1340,87.6 L1360,90.1 L1380,92.5 L1400,94.8 L1420,96.8 L1440,98.4 L1460,99.5 L1480,100.0 L1500,99.9 L1520,99.2 L1540,97.9 L1560,96.2 L1580,94.1 L1600,91.8 L1620,89.3 L1640,86.9 L1660,84.7 L1680,82.8 L1700,81.3 L1720,80.4 L1740,80.0 L1760,80.2 L1780,81.1 L1800,82.4 L1820,84.3 L1840,86.4 L1860,88.8 L1880,91.3 L1900,93.7 L1920,95.8 L1940,97.6 L1960,99.0 L1980,99.8 L2000,100.0 L2020,99.6 L2040,98.6 L2040,170 L0,170 Z" fill="url(#fw)" fill-opacity="0.15"/>
-<path class="dr" d="M0,76.0 L20,81.1 L40,85.4 L60,88.5 L80,89.9 L100,89.5 L120,87.2 L140,83.4 L160,78.6 L180,73.4 L200,68.6 L220,64.8 L240,62.5 L260,62.1 L280,63.5 L300,66.6 L320,70.9 L340,76.0 L360,81.1 L380,85.4 L400,88.5 L420,89.9 L440,89.5 L460,87.2 L480,83.4 L500,78.6 L520,73.4 L540,68.6 L560,64.8 L580,62.5 L600,62.1 L620,63.5 L640,66.6 L660,70.9 L680,76.0 L700,81.1 L720,85.4 L740,88.5 L760,89.9 L780,89.5 L800,87.2 L820,83.4 L840,78.6 L860,73.4 L880,68.6 L900,64.8 L920,62.5 L940,62.1 L960,63.5 L980,66.6 L1000,70.9 L1020,76.0 L1040,81.1 L1060,85.4 L1080,88.5 L1100,89.9 L1120,89.5 L1140,87.2 L1160,83.4 L1180,78.6 L1200,73.4 L1220,68.6 L1240,64.8 L1260,62.5 L1280,62.1 L1300,63.5 L1320,66.6 L1340,70.9 L1360,76.0 L1380,81.1 L1400,85.4 L1420,88.5 L1440,89.9 L1460,89.5 L1480,87.2 L1500,83.4 L1520,78.6 L1540,73.4 L1560,68.6 L1580,64.8 L1600,62.5 L1620,62.1 L1640,63.5 L1660,66.6 L1680,70.9 L1700,76.0 L1720,81.1 L1740,85.4 L1760,88.5 L1780,89.9 L1800,89.5 L1820,87.2 L1840,83.4 L1860,78.6 L1880,73.4 L1900,68.6 L1920,64.8 L1940,62.5 L1960,62.1 L1980,63.5 L2000,66.6 L2020,70.9 L2040,76.0 L2040,170 L0,170 Z" fill="url(#fw)" fill-opacity="0.30"/>
+<path class="dr2" d="{wave(amps[1], 2, h * 0.72)}" fill="url(#fw)" fill-opacity="0.15"/>
+<path class="dr" d="{wave(amps[0], 3, h * 0.60)}" fill="url(#fw)" fill-opacity="0.30"/>
 </g>
-<rect x="14" y="0" width="992" height="1.6" fill="url(#fr)"/>
-<text x="510.0" y="48" font-size="15" fill="{MUTED}" text-anchor="middle">greykxtx@acro ~ % exit</text>
-<rect class="cur" x="616.3" y="35" width="9" height="17" fill="{ACCENT}"/>
-<path d="M0 14 A14 14 0 0 1 14 0 L1006 0 A14 14 0 0 1 1020 14 L1020 116 A14 14 0 0 1 1006 130 L14 130 A14 14 0 0 1 0 116 Z" fill="none" stroke="{BORDER}"/>""" + "</svg>\n")
-    open(os.path.join(OUT, "banner-footer.svg"), "w").write(svg)
-    print(f"  banner-footer.svg  1020x130")
+<rect x="{rx}" y="0" width="{cw - 2*rx}" height="1.6" fill="url(#fr)"/>
+<text x="{cw/2}" y="{ty:.0f}" font-size="{fs}" fill="{MUTED}" text-anchor="middle">{prompt}</text>
+<rect class="cur" x="{curx:.1f}" y="{ty - fs + 2:.0f}" width="{fs*0.6:.0f}" height="{fs*1.15:.0f}" fill="{ACCENT}"/>
+<path d="{rr}" fill="none" stroke="{BORDER}"/>
+</svg>
+'''
+    open(os.path.join(OUT, name), "w").write(svg)
+    print(f"  {name:24} {cw}x{h}")
 
 
 # =========================================================================
@@ -586,5 +605,7 @@ def check(name, right):
 
 
 if __name__ == "__main__":
-    build(); build_mobile(); build_buttons(); build_footer()
+    build(); build_mobile(); build_buttons()
+    build_footer()
+    build_footer('banner-footer-mobile.svg', cw=400, h=104, fs=13, rx=12, amps=(9, 7))
     check("profile.svg", 980); check("profile-mobile.svg", 380)

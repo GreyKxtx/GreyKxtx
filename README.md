@@ -3,8 +3,8 @@
 <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=28&duration=2600&pause=900&color=8B5CF6&center=true&vCenter=true&width=900&lines=Full-stack+Developer+%7C+AI+Engineer;Building+the+Acro+ecosystem;Orchestra+Code+%E2%80%94+AI+coding+agent;Orchestra+Studio+%E2%80%94+video+from+prompts;Orchestra+Augur+%E2%80%94+information+aggregation;Mentorium+%E2%80%94+courses+%2B+AI+tutor;Lunacy+%E2%80%94+team+messenger;TRONIX+%E2%80%94+anti-detect+browser" alt="Typing SVG" />
 
 <picture>
-  <source media="(max-width: 700px)" srcset="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/profile-mobile.svg?v=5">
-  <img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/profile.svg?v=5" width="100%" alt="GreyKxtx — system info, about, the Acro ecosystem, tech stack and AI directions" />
+  <source media="(max-width: 700px)" srcset="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/profile-mobile.svg?v=6">
+  <img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/profile.svg?v=6" width="100%" alt="GreyKxtx — system info, about, the Acro ecosystem, tech stack and AI directions" />
 </picture>
 
 
@@ -26,18 +26,18 @@
 
 <br/><br/>
 
-<a href="https://acro-company-site.vercel.app/"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-acro.svg?v=5" height="46" alt="Acro"/></a>
-<a href="https://github.com/GreyKxtx/Mentorium"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-mentorium.svg?v=5" height="46" alt="Mentorium"/></a>
-<a href="https://github.com/GreyKxtx/Lunacy"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-lunacy.svg?v=5" height="46" alt="Lunacy"/></a>
-<a href="https://github.com/GreyKxtx/Orchestra-Augur"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-augur.svg?v=5" height="46" alt="Orchestra Augur"/></a>
+<a href="https://acro-company-site.vercel.app/"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-acro.svg?v=6" height="46" alt="Acro"/></a>
+<a href="https://github.com/GreyKxtx/Mentorium"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-mentorium.svg?v=6" height="46" alt="Mentorium"/></a>
+<a href="https://github.com/GreyKxtx/Lunacy"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-lunacy.svg?v=6" height="46" alt="Lunacy"/></a>
+<a href="https://github.com/GreyKxtx/Orchestra-Augur"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-augur.svg?v=6" height="46" alt="Orchestra Augur"/></a>
 
 <br/>
 
-<a href="https://www.linkedin.com/in/andrey-korsun/"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-linkedin.svg?v=5" height="46" alt="LinkedIn"/></a>
-<a href="mailto:greykxtx@example.com"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-email.svg?v=5" height="46" alt="Email"/></a>
-<a href="https://t.me/Scrimgxneee"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-telegram.svg?v=5" height="46" alt="Telegram"/></a>
-<a href="https://www.codewars.com/users/Screamyy"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-codewars.svg?v=5" height="46" alt="Codewars"/></a>
-<a href="https://tryhackme.com/p/eyesecluded44"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-tryhackme.svg?v=5" height="46" alt="TryHackMe"/></a>
+<a href="https://www.linkedin.com/in/andrey-korsun/"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-linkedin.svg?v=6" height="46" alt="LinkedIn"/></a>
+<a href="mailto:greykxtx@example.com"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-email.svg?v=6" height="46" alt="Email"/></a>
+<a href="https://t.me/Scrimgxneee"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-telegram.svg?v=6" height="46" alt="Telegram"/></a>
+<a href="https://www.codewars.com/users/Screamyy"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-codewars.svg?v=6" height="46" alt="Codewars"/></a>
+<a href="https://tryhackme.com/p/eyesecluded44"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-tryhackme.svg?v=6" height="46" alt="TryHackMe"/></a>
 
 <br/><br/>
 
@@ -47,7 +47,10 @@
 
 <br/><br/>
 
-<img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/banner-footer.svg?v=5" width="100%" alt=""/>
+<picture>
+  <source media="(max-width: 700px)" srcset="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/banner-footer-mobile.svg?v=6">
+  <img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/banner-footer.svg?v=6" width="100%" alt=""/>
+</picture>
 
 </div>
 
