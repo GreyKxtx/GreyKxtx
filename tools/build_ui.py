@@ -121,7 +121,8 @@ INFO2 = [("Lang.Primary", "Python, TypeScript, Go"),
 SYSTEMS = [("Orchestra Code", "local-first AI coding agent"),
            ("Orchestra Studio", "content generation pipeline"),
            ("Orchestra Augur", "information aggregation"),
-           ("Acro EdTech", "course platform + AI tutor"),
+           ("Mentorium", "course platform + AI tutor"),
+           ("Lunacy", "team messenger"),
            ("Acro ERP", "business operations suite")]
 
 ABOUT = [
@@ -163,7 +164,7 @@ PROJECTS = [
      "events and scores how much each one actually matters - so the output is a ranked picture "
      "of what happened, not a feed."),
 
-    ("Acro EdTech", "course platform with a realtime AI tutor", "near complete", ACCENT2, [
+    ("Mentorium", "course platform with a realtime AI tutor", "near complete", ACCENT2, [
         ("Stack", "React - Next.js - Python backend - realtime LLM"),
         ("Feature", "Course constructor - structured course building, not video hosting"),
         ("AI", "Realtime tutor that responds in-context during the course")],
@@ -171,9 +172,15 @@ PROJECTS = [
      "can be generated and rearranged, with an AI tutor available in the lesson rather than in "
      "a side chat."),
 
-    ("Acro ERP & Messenger", "business operations suite", "parked - resumes after Studio", MUTED, [
-        ("ERP", "A modern alternative to legacy suites, with AI built in, not bolted on"),
-        ("Messenger", "Team communication layer for the ecosystem - core built")],
+    ("Lunacy", "team messenger for the Acro ecosystem", "core built", ACCENT2, [
+        ("Stack", "[add stack]"),
+        ("Role", "Team communication layer the other Acro systems plug into")],
+     "[Short description: what Lunacy does beyond chat - calls, channels, integrations "
+     "with the rest of the ecosystem.]"),
+
+    ("Acro ERP", "business operations suite", "parked - resumes after Studio", MUTED, [
+        ("Stack", "[add stack]"),
+        ("Approach", "A modern alternative to legacy suites, with AI built in, not bolted on")],
      "[Short description of the ERP's scope and which modules exist.]"),
 ]
 
@@ -259,7 +266,7 @@ def build():
     y += 40
     o.append(f'<line x1="40" y1="{y}" x2="{W-40}" y2="{y}" stroke="{BORDER}"/>')
     y += 46
-    o += section("ACRO.ECOSYSTEM", "5 systems", 40, W-40, y)
+    o += section("ACRO.ECOSYSTEM", f"{len(PROJECTS)} systems", 40, W-40, y)
     y += 38
     for line in ("An umbrella of platforms for business needs — built as independent",
                  "systems that share infrastructure."):
@@ -357,5 +364,178 @@ def build_footer():
     print("  banner-footer.svg")
 
 
+
+# =========================================================================
+# profile-mobile.svg — same content, one narrow column
+#
+# A phone shrinks the 1020px canvas to ~390px (scale 0.38), which drops the
+# 19px body type to about 7px. This variant uses a narrow canvas instead, so
+# the same type renders near its nominal size on a phone. README picks it via
+# <picture media="(max-width:700px)">.
+# =========================================================================
+MW = 400          # canvas width
+MI, MR = 20, 380  # inner left / right edge
+
+def mpanel(h):
+    d = (f"M0 12 A12 12 0 0 1 12 0 L{MW-12} 0 A12 12 0 0 1 {MW} 12 "
+         f"L{MW} {h-12} A12 12 0 0 1 {MW-12} {h} L12 {h} A12 12 0 0 1 0 {h-12} Z")
+    return (f'<path d="{d}" fill="{BG}"/><path d="{d}" fill="none" stroke="{BORDER}"/>'
+            f'<rect x="0" y="12" width="3" height="{h-24}" fill="url(#spine)" opacity="0.7"/>')
+
+def build_mobile():
+    o = []
+    def sec(label, y, meta=None):
+        out = [txt(MI, y, label, 12.5, ACCENT, ls=2.2),
+               f'<line x1="{MI + w(label,12.5,2.2) + 12:.1f}" y1="{y-4}" x2="{MR}" y2="{y-4}" stroke="url(#rule)"/>']
+        if meta:
+            out.append(txt(MR, y, meta, 11, MUTED, anchor="end"))
+        return out
+
+    def field(key, val, y, kf=ACCENT2, vf=TEXT, ks=12, vs=14.5, wrap_at=41):
+        out = [txt(MI, y, key, ks, kf, ls=1.2)]
+        y += 19
+        for line in textwrap.wrap(val, wrap_at):
+            out.append(txt(MI, y, line, vs, vf)); y += 20
+        return out, y + 9
+
+    # title bar
+    o.append(f'<path d="M0 12 A12 12 0 0 1 12 0 L{MW-12} 0 A12 12 0 0 1 {MW} 12 L{MW} 38 L0 38 Z" fill="{BAR}"/>')
+    o.append(f'<line x1="0" y1="38" x2="{MW}" y2="38" stroke="{BORDER}"/>')
+    for i, c in enumerate(("#FF5F57", "#FEBC2E", "#28C840")):
+        o.append(f'<circle cx="{20+i*16}" cy="19" r="5" fill="{c}"/>')
+    o.append(f'<circle class="pu" cx="{MR - w("ONLINE",11,1.2) - 11:.1f}" cy="16" r="3.5" fill="{TEAL}"/>')
+    o.append(txt(MR, 20, "ONLINE", 11, TEAL, anchor="end", ls=1.2))
+
+    # identity
+    y = 68
+    o += sec("IDENTITY", y)
+    y += 16
+    o.append(f'<circle cx="{MW/2}" cy="{y+95}" r="130" fill="url(#halo)"/>')
+    o.append(f'<clipPath id="avm"><rect x="{MW/2-85:.0f}" y="{y}" width="170" height="190" rx="10"/></clipPath>')
+    o.append(f'<image href="{AVATAR}" x="{MW/2-85:.0f}" y="{y}" width="170" height="190" '
+             f'preserveAspectRatio="xMidYMid slice" clip-path="url(#avm)"/>')
+    o.append(f'<rect x="{MW/2-84.5:.0f}" y="{y+0.5}" width="169" height="189" rx="10" fill="none" stroke="{BORDER}"/>')
+    y += 190 + 32
+    o.append(txt(MW/2, y, "GreyKxtx", 20, TEXT, anchor="middle", weight="600", ls=1)); y += 22
+    o.append(txt(MW/2, y, "ACRO // SYSTEMS", 11.5, MUTED, anchor="middle", ls=2.2)); y += 40
+
+    # system info
+    o += sec("SYSTEM.INFO", y); y += 30
+    for k, v in INFO + INFO2:
+        block, y = field(k, v, y)
+        o += block
+    y += 6
+
+    o += sec("ACTIVE.SYSTEMS", y, f"{len(SYSTEMS)} systems"); y += 28
+    for name, desc in SYSTEMS:
+        o.append(f'<circle cx="{MI+4}" cy="{y-5}" r="3" fill="{ACCENT}"/>')
+        o.append(txt(MI + 16, y, name, 14.5, TEXT)); y += 19
+        for line in textwrap.wrap(desc, 40):
+            o.append(txt(MI + 16, y, line, 12.5, MUTED)); y += 17
+        y += 10
+    y += 8
+
+    # about
+    o += sec("ABOUT", y, "whoami"); y += 30
+    for para in ABOUT:
+        if not para:
+            y += 12; continue
+        for line in textwrap.wrap(para, 37):
+            o.append(txt(MI, y, "|", 15, RAIL))
+            o.append(txt(MI + 16, y, line, 15, TEXT)); y += 22
+    y += 18
+    o.append(txt(MI, y, ">", 14, ACCENT))
+    o.append(txt(MI + 16, y, "Open to:", 14, ACCENT2)); y += 20
+    for line in textwrap.wrap("AI / backend collaborations - open source - hard engineering problems", 41):
+        o.append(txt(MI + 16, y, line, 13, MUTED)); y += 18
+    y += 26
+
+    # ecosystem + cards
+    o += sec("ACRO.ECOSYSTEM", y, f"{len(PROJECTS)} systems"); y += 28
+    for line in textwrap.wrap("An umbrella of platforms for business needs — built as "
+                              "independent systems that share infrastructure.", 40):
+        o.append(txt(MI, y, line, 14.5, TEXT)); y += 21
+    y += 14
+
+    for name, tag, status, scol, rows, desc in PROJECTS:
+        inner, cy = [], 26
+        inner.append(f'<circle cx="{MI+16}" cy="{cy-5}" r="3.5" fill="{scol}"/>')
+        inner.append(txt(MI + 28, cy, name, 15.5, TEXT, weight="600")); cy += 19
+        for line in textwrap.wrap(tag, 38):
+            inner.append(txt(MI + 28, cy, line, 12.5, MUTED)); cy += 17
+        cy += 4
+        sw = w(status, 11) + 18
+        inner.append(f'<rect x="{MI+28}" y="{cy-13}" width="{sw:.1f}" height="21" rx="6" fill="{BG}" stroke="{BORDER}"/>')
+        inner.append(txt(MI + 28 + sw/2, cy + 2, status, 11, scol, anchor="middle"))
+        cy += 26
+        for k, v in rows:
+            inner.append(txt(MI + 28, cy, k, 11.5, ACCENT2, ls=1)); cy += 16
+            for line in textwrap.wrap(v, 38):
+                inner.append(txt(MI + 28, cy, line, 12.5, MUTED)); cy += 16
+            cy += 6
+        cy += 2
+        for line in textwrap.wrap(desc, 37):
+            inner.append(txt(MI + 28, cy, line, 13, TEXT)); cy += 18
+        ch = cy + 6
+        o.append(f'<rect x="{MI}" y="{y}" width="{MR-MI}" height="{ch}" rx="9" fill="{BAR}" stroke="{BORDER}"/>'
+                 f'<rect x="{MI}" y="{y+9}" width="3" height="{ch-18}" fill="{scol}" opacity="0.55"/>'
+                 f'<g transform="translate(0,{y})">' + "".join(inner) + '</g>')
+        y += ch + 12
+    y += 16
+
+    # tech stack
+    o += sec("TECH.STACK", y, "frameworks & tooling"); y += 26
+    for label, items in STACK:
+        o.append(txt(MI, y, label, 12, ACCENT, ls=1.8)); y += 18
+        x, ry, CH = MI, y, 26
+        for it in items:
+            cw = w(it, 12.5) + 20
+            if x + cw > MR:
+                x, ry = MI, ry + CH + 7
+            o.append(f'<rect x="{x:.1f}" y="{ry}" width="{cw:.1f}" height="{CH}" rx="7" '
+                     f'fill="{BAR}" stroke="{BORDER}"/>' + txt(x + 10, ry + 17, it, 12.5, TEXT))
+            x += cw + 7
+        y = ry + CH + 18
+    y += 10
+
+    # ai directions
+    o += sec("AI.DIRECTIONS", y, "applied focus areas"); y += 28
+    for title, desc in AI:
+        o.append(f'<circle cx="{MI+4}" cy="{y-5}" r="3" fill="{ACCENT}"/>')
+        o.append(txt(MI + 16, y, title, 14, TEXT)); y += 18
+        for line in textwrap.wrap(desc, 40):
+            o.append(txt(MI + 16, y, line, 12.5, MUTED)); y += 17
+        y += 10
+
+    h = y + 14
+    defs = DEFS.replace('<clipPath id="av"><rect x="40" y="110" width="300" height="316" rx="12"/></clipPath>', '')
+    svg = HEAD.format(w=MW, h=h, f=FONT) + defs + mpanel(h) + "\n" + "\n".join(o) + "\n</svg>\n"
+    open(os.path.join(OUT, "profile-mobile.svg"), "w").write(svg)
+    print(f"  profile-mobile.svg {MW}x{h}  {len(svg)/1024:.1f}K")
+
+
+
+def check(name, right):
+    """Fail loudly if any text runs past the panel's inner edge."""
+    import html as _html
+    s = open(os.path.join(OUT, name)).read()
+    bad = []
+    for m in re.finditer(r'<text x="([-0-9.]+)" y="[0-9.]+"([^>]*)>(.*?)</text>', s):
+        x, attrs = float(m.group(1)), m.group(2)
+        text = _html.unescape(re.sub(r"<[^>]+>", "", m.group(3)))
+        fs = float(re.search(r'font-size="([0-9.]+)"', attrs).group(1))
+        ls = re.search(r'letter-spacing="([0-9.]+)"', attrs)
+        wid = len(text) * (fs * 0.6021 + (float(ls.group(1)) if ls else 0))
+        if 'text-anchor="end"' in attrs:      x0, x1 = x - wid, x
+        elif 'text-anchor="middle"' in attrs: x0, x1 = x - wid / 2, x + wid / 2
+        else:                                 x0, x1 = x, x + wid
+        if x1 > right + 0.5 or x0 < 0:
+            bad.append(f"{text[:60]!r} ends at {x1:.0f}")
+    if bad:
+        raise SystemExit(f"{name}: {len(bad)} line(s) overflow past x={right}:\n  " + "\n  ".join(bad))
+    print(f"  {name:18} no overflow past x={right}")
+
+
 if __name__ == "__main__":
-    build(); build_buttons(); build_footer()
+    build(); build_mobile(); build_buttons(); build_footer()
+    check("profile.svg", 980); check("profile-mobile.svg", 380)

@@ -1,8 +1,11 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=28&duration=2600&pause=900&color=8B5CF6&center=true&vCenter=true&width=900&lines=Full-stack+Developer+%7C+AI+Engineer;Building+the+Acro+ecosystem;Orchestra+Code+%E2%80%94+AI+coding+agent;Orchestra+Studio+%E2%80%94+content+pipeline;Orchestra+Augur+%E2%80%94+information+aggregation;Acro+EdTech+%E2%80%94+courses+%2B+AI+tutor" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=28&duration=2600&pause=900&color=8B5CF6&center=true&vCenter=true&width=900&lines=Full-stack+Developer+%7C+AI+Engineer;Building+the+Acro+ecosystem;Orchestra+Code+%E2%80%94+AI+coding+agent;Orchestra+Studio+%E2%80%94+content+pipeline;Orchestra+Augur+%E2%80%94+information+aggregation;Mentorium+%E2%80%94+courses+%2B+AI+tutor;Lunacy+%E2%80%94+team+messenger" alt="Typing SVG" />
 
-<img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/profile.svg" width="100%" alt="GreyKxtx — system info, about, the Acro ecosystem, tech stack and AI directions" />
+<picture>
+  <source media="(max-width: 700px)" srcset="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/profile-mobile.svg">
+  <img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/profile.svg" width="100%" alt="GreyKxtx — system info, about, the Acro ecosystem, tech stack and AI directions" />
+</picture>
 
 <br/><br/>
 
