@@ -121,8 +121,8 @@ INFO2 = [("Lang.Primary", "Python, TypeScript, Go"),
 SYSTEMS = [("Orchestra Code", "local-first AI coding agent"),
            ("Orchestra Studio", "content generation pipeline"),
            ("Orchestra Augur", "information aggregation"),
-           ("Mentorium", "course platform + AI tutor"),
-           ("Lunacy", "team messenger"),
+           ("Mentorium", "AI tutor + skill graph"),
+           ("Lunacy", "E2E messenger + calls"),
            ("Acro ERP", "business operations suite")]
 
 ABOUT = [
@@ -164,19 +164,25 @@ PROJECTS = [
      "events and scores how much each one actually matters - so the output is a ranked picture "
      "of what happened, not a feed."),
 
-    ("Mentorium", "course platform with a realtime AI tutor", "near complete", ACCENT2, [
-        ("Stack", "React - Next.js - Python backend - realtime LLM"),
-        ("Feature", "Course constructor - structured course building, not video hosting"),
-        ("AI", "Realtime tutor that responds in-context during the course")],
-     "Learning platform built around a course-constructor: courses are structured objects that "
-     "can be generated and rearranged, with an AI tutor available in the lesson rather than in "
-     "a side chat."),
+    ("Mentorium", "education platform with a realtime AI tutor", "near complete", ACCENT2, [
+        ("Backend", "FastAPI (async) - SQLAlchemy - Celery - PostgreSQL - Redis - MinIO"),
+        ("Frontend", "React 19 - TypeScript - Vite - React Router v7 - Tailwind - shadcn/ui"),
+        ("AI", "Agent core: model routing, tools, context budget, three-tier memory"),
+        ("Voice", "Local faster-whisper STT + Piper TTS, F5-TTS voice cloning"),
+        ("Repository", "github.com/GreyKxtx/Mentorium")],
+     "Courses, a skill-graph roadmap scoring mastery 0-5 from evidence, generated exams whose "
+     "code tasks run in a locked-down Docker sandbox, verifiable certificates, and a tutor that "
+     "teaches by voice on a live whiteboard."),
 
-    ("Lunacy", "team messenger for the Acro ecosystem", "core built", ACCENT2, [
-        ("Stack", "[add stack]"),
-        ("Role", "Team communication layer the other Acro systems plug into")],
-     "[Short description: what Lunacy does beyond chat - calls, channels, integrations "
-     "with the rest of the ecosystem.]"),
+    ("Lunacy", "messenger for personal and corporate communication", "core stable", ACCENT2, [
+        ("Backend", "Java 21 - Spring Boot 3 - Spring Cloud microservices - gRPC/Protobuf"),
+        ("Data", "PostgreSQL - Redis - RabbitMQ - Elasticsearch - Prometheus/Grafana"),
+        ("Frontend", "React 18 - TypeScript - Zustand - Vite - Tailwind - Electron"),
+        ("Crypto", "End-to-end encryption: X3DH + Double Ratchet, device keys, JWT/RBAC"),
+        ("Repository", "github.com/GreyKxtx/Lunacy")],
+     "Eight Spring Boot services behind a gateway with service discovery: direct and group chats, "
+     "broadcast channels, WebRTC audio/video calls with screen share, and end-to-end encrypted "
+     "direct messages. Web and Electron desktop ship from one React monorepo."),
 
     ("Acro ERP", "business operations suite", "parked - resumes after Studio", MUTED, [
         ("Stack", "[add stack]"),
@@ -339,7 +345,8 @@ def build():
 def build_buttons():
     for slug, label in [("acro", "ACRO"), ("linkedin", "LINKEDIN"), ("email", "EMAIL"),
                         ("telegram", "TELEGRAM"), ("codewars", "CODEWARS"),
-                        ("tryhackme", "TRYHACKME"), ("github", "GITHUB")]:
+                        ("tryhackme", "TRYHACKME"), ("github", "GITHUB"),
+                        ("mentorium", "MENTORIUM"), ("lunacy", "LUNACY"), ("augur", "AUGUR")]:
         fs, ls = 13.5, 1.2
         tw = w(label, fs, ls)
         bw, h = int(round(22 + 12 + tw + 12 + 20)), 46

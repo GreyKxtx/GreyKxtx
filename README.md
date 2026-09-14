@@ -7,6 +7,12 @@
   <img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/profile.svg" width="100%" alt="GreyKxtx — system info, about, the Acro ecosystem, tech stack and AI directions" />
 </picture>
 
+<br/>
+
+<a href="https://github.com/GreyKxtx/Mentorium"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-mentorium.svg" height="46" alt="Mentorium"/></a>
+<a href="https://github.com/GreyKxtx/Lunacy"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-lunacy.svg" height="46" alt="Lunacy"/></a>
+<a href="https://github.com/GreyKxtx/Orchestra-Augur"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-augur.svg" height="46" alt="Orchestra Augur"/></a>
+
 <br/><br/>
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=GreyKxtx&hide_border=true&background=00000000&ring=8B5CF6&fire=A78BFA&currStreakLabel=8B5CF6&currStreakNum=EDEAF7&sideNums=EDEAF7&sideLabels=9E99B5&dates=9E99B5&stroke=2E2846" height="170" alt="Streak stats"/>
