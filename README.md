@@ -133,7 +133,7 @@ Learning platform built around a course-constructor: courses are structured obje
 
 <br/><br/>
 
-<a href="https://your-portfolio.dev"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-portfolio.svg" height="46" alt="Portfolio"/></a>
+<a href="https://acro-company-site.vercel.app/"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-acro.svg" height="46" alt="Acro"/></a>
 <a href="https://linkedin.com/in/greykxtx"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-linkedin.svg" height="46" alt="LinkedIn"/></a>
 <a href="mailto:greykxtx@example.com"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-email.svg" height="46" alt="Email"/></a>
 <a href="https://t.me/greykxtx"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-telegram.svg" height="46" alt="Telegram"/></a>
@@ -142,7 +142,7 @@ Learning platform built around a course-constructor: courses are structured obje
 
 <a href="https://github.com/GreyKxtx"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-github.svg" height="46" alt="GitHub"/></a>
 <a href="https://www.codewars.com/users/Screamyy"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-codewars.svg" height="46" alt="Codewars"/></a>
-<a href="https://tryhackme.com/p/[your-username]"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-tryhackme.svg" height="46" alt="TryHackMe"/></a>
+<a href="https://tryhackme.com/p/eyesecluded44"><img src="https://raw.githubusercontent.com/GreyKxtx/GreyKxtx/main/ui/btn-tryhackme.svg" height="46" alt="TryHackMe"/></a>
 
 <br/><br/>
 

@@ -113,7 +113,7 @@ def write(name, h, body, top_round=True, bottom_round=True):
 # =========================================================================
 INFO = [("Subject", "GreyKxtx"), ("Role", "Full-stack Developer / AI Engineer"),
         ("Focus", "Applied AI - Agents - Distributed Systems"),
-        ("Experience", "[X]+ years"), ("Status", "Building the Acro ecosystem")]
+        ("Experience", "5+ years"), ("Status", "Building the Acro ecosystem")]
 INFO2 = [("Lang.Primary", "Python, TypeScript, Go"),
          ("Lang.Also", "JavaScript, Java, C++, Ruby, SQL"),
          ("Domain", "Backend - AI/ML - Frontend - Infra"),
@@ -309,7 +309,7 @@ def build_focus():
 # buttons
 # =========================================================================
 def build_buttons():
-    for slug, label in [("portfolio", "PORTFOLIO"), ("linkedin", "LINKEDIN"), ("email", "EMAIL"),
+    for slug, label in [("acro", "ACRO"), ("linkedin", "LINKEDIN"), ("email", "EMAIL"),
                         ("telegram", "TELEGRAM"), ("codewars", "CODEWARS"),
                         ("tryhackme", "TRYHACKME"), ("github", "GITHUB")]:
         fs, ls = 13.5, 1.2
